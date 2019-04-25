@@ -2,6 +2,7 @@
 
 set -e
 
+
 apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
       apk add --no-cache curl jq && \
       cd "/tmp" && \
