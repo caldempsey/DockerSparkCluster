@@ -13,6 +13,11 @@ Anyway, presenting a standalone spark cluster for development and testing purpos
 | spark-worker-2 | 10.5.0.4   |
 | spark-worker-3 | 10.5.0.5   |
 
+
+## Clone and launch
+
+To get started _right now_ $`git clone https://github.com/mmacheerpuppy/DockerSparkCluster && ./DockerComposeSparkCluster/build`
+
 ## To build a spark cluster
 
 Run `build.sh`. To validate the cluster is running visit 10.5.0.2:8080, which becomes accessible due to the `docker0` bridge adapter. 
