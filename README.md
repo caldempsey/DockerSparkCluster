@@ -2,7 +2,7 @@
 
 # General
 
-Admittedly borrowed a lot of the Spark deployment scripts from https://github.com/big-data-europe/docker-spark, but I did the networking myself, I've developed this for learning and development purposes (I want to play with Spark but also get more hands on with networks as I come from a family of network engineers and we lack this in _insert-your-cloud-provider-here_-land). I miss the days of working with hardware switches, bridges .etc. You're basically going to be stuck with a cluster of three workers, but hey it's still a cluster.
+Admittedly borrowed a lot of the Spark deployment scripts from https://github.com/big-data-europe/docker-spark, but I did the networking myself, I've developed this for learning and development purposes (I want to play with Spark but also get more hands on with networks as I come from a family of network engineers and we lack this in _insert-your-cloud-provider-here_-land, and I don't want to pay for an EMR cluster). I miss the days of working with hardware switches, bridges .etc. You're basically going to be stuck with a cluster of three workers, but hey it's still a cluster.
 
 Anyway, presenting a standalone spark cluster for development and testing purposes which will create the following containers...
 
