@@ -2,7 +2,7 @@
 
 # General
 
-Admittedly borrowed from https://github.com/big-data-europe/docker-spark, I've developed this for learning and development purposes (I want to play with Spark but also get more hands on with networks as I come from a family of network engineers and we lack this in _insert-your-cloud-provider-here_-land). I miss the days of working with hardware switches, bridges .etc. You're basically going to be stuck with a cluster of three workers, but hey it's still a cluster.
+Admittedly borrowed a lot of the Spark deployment scripts from https://github.com/big-data-europe/docker-spark, but I did the networking myself, I've developed this for learning and development purposes (I want to play with Spark but also get more hands on with networks as I come from a family of network engineers and we lack this in _insert-your-cloud-provider-here_-land). I miss the days of working with hardware switches, bridges .etc. You're basically going to be stuck with a cluster of three workers, but hey it's still a cluster.
 
 Anyway, presenting a standalone spark cluster for development and testing purposes which will create the following containers...
 
@@ -40,4 +40,4 @@ It's important to note the docker-compose.yml binds the following volumes shared
 
 ## Ship it
 
-To **spark-submit** copy your application bundle into all workers by inserting your application and config to the docker volumes shared across all hosts. Your application should be inserted to `/mnt/spark-apps`, and your input files into `/mnt/spark-files`. There is no Pyspark support as of yet. Use the template spark-submit `/spark-submit/template-app.sh` containing your JAR and main class.
+To **spark-submit** copy your application bundle into all workers by inserting your application and config to the docker volumes shared across all hosts. Your application should be inserted to `/mnt/spark-apps`, and your input files into `/mnt/spark-files`. There is no Pyspark support as of yet. There is a template spark-submit `/spark-submit/template-app.sh` containing an example shell script which you can use to direct the master-node to your JAR and main class by a docker-run call to the network.
