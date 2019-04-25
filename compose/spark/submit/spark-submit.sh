@@ -1,4 +1,4 @@
- #!/bin/bash
+ #!/bin/sh
  
 /spark/bin/spark-submit \
 --class ${SPARK_APPLICATION_MAIN_CLASS} \
