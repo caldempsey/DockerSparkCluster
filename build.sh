@@ -1,8 +1,9 @@
 #!/bin/bash
 
 set -e
+
 # Acquire environment variables for building images.
-SPARK_VERSION=2.4.2
+source .env
 # Build images 
 docker build -t spark-base:${SPARK_VERSION} ./compose/spark/base --build-arg SPARK_VERSION=${SPARK_VERSION}
 docker build -t spark-master:${SPARK_VERSION} ./compose/spark/master --build-arg FROM_IMAGE=spark-base:${SPARK_VERSION}
