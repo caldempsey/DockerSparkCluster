@@ -15,7 +15,7 @@ Anyway, presenting a standalone spark cluster for development and testing purpos
 
 ## To build a spark cluster
 
-Run `build.sh`
+Run `build.sh`. To validate the cluster is running visit 10.5.0.2:8080, which becomes accessible due to the `docker0` bridge adapter. 
 
 ## To tear down a spark cluster
 
