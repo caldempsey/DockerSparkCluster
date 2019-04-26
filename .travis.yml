@@ -1,3 +1,4 @@
+language: bash
 deploy:
     provider: script
     script: bash ./build.sh && ./destroy.sh
