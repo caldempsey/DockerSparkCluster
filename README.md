@@ -1,4 +1,4 @@
-TravisCI: ![](https://travis-ci.org/mmacheerpuppy/DockerSparkCluster.svg?branch=master)
+[![Build Status](https://travis-ci.org/mmacheerpuppy/DockerSparkCluster.svg?branch=master)](https://travis-ci.org/mmacheerpuppy/DockerSparkCluster)
 
 # Docker Compose Spark Cluster
 
