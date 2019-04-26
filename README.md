@@ -1,3 +1,5 @@
+![](https://travis-ci.org/mmacheerpuppy/DockerSparkCluster.svg?branch=master)
+
 # Docker Compose Spark Cluster
 
 # General
