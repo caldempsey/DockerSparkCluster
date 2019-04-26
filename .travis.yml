@@ -1,7 +1,7 @@
 language: bash
+# Includes docker and docker compose services. 
 services:
   - docker
-
 deploy:
     provider: script
     script: bash ./build.sh && ./destroy.sh
