@@ -22,7 +22,7 @@ To get started _right now_ $`git clone https://github.com/mmacheerpuppy/DockerSp
 
 ## To build a spark cluster
 
-Run `build.sh`. To validate the cluster is running visit 10.5.0.2:8080, which becomes accessible due to the `docker0` bridge adapter. 
+Run `build.sh`. To validate the cluster is running visit 10.5.0.2:8080, which becomes accessible due to the `docker0` bridge adapter. The cluster should demonstrate exactly three workers spawned for distributed processing of your parquet files and all other things good.
 
 ## To tear down a spark cluster
 
